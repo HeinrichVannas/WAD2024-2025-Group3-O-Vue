@@ -1,29 +1,32 @@
+
 <script>
 export default {
-  name: "postComponent",
+  name: "PostComponent",
   props: ["posts"],
   methods: {
-    resolveImagePath(imagePath) {
+    resolveImagePath(imagePath) {   
       try {
-        return require(`${imagePath}`);
+        
+        return require(`@/assets/${imagePath}`);
       } catch (e) {
-        console.error(`Image not found: ${imagePath}`);
-        return null;
+
+        return require('@/assets/default_profile.jpg');
       }
     },
   },
-}
+};
+
 </script>
 
 <template>
   <div class="post" v-for="(post, index) in posts" :key="index">
     <div class="postHead">
-      <img src="@/assets/default_profile.jpg" alt="default profile image"/>
-      <p class="date">{{post.postDate}}</p>
+      <img src="@/assets/default_profile.jpg" alt="default profile image" />
+      <p class="date">{{ post.postDate }}</p>
     </div>
-    <img v-if="post.image" :src=post.image alt="posted image"/>
-    <p class="postMessage">{{post.message}}</p>
-    <img class="like" src="@/assets/likeIcon.png" alt="like button icon">
+    <img v-if="post.image" :src="resolveImagePath(post.image)" alt="posted image" />
+    <p class="postMessage">{{ post.message }}</p>
+    <img class="like" src="@/assets/likeIcon.png" alt="like button icon" />
   </div>
 </template>
 

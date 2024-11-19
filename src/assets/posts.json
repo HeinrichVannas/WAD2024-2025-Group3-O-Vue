@@ -2,7 +2,7 @@
   {
     "message": "Look at this post.",
     "postDate": "oct 22, 2024",
-    "image": "@/assets/tartu2024.jpg"
+    "image": "tartu2024.jpg"
   },
   {
     "message": "This is a post message",
@@ -17,7 +17,7 @@
   {
     "message": "Hey I'm at Delta rn.",
     "postDate": "oct 24, 2024",
-    "image": "@/assets/delta.jpeg"
+    "image": "delta.jpeg"
   },
   {
     "message": "Be right there!",
