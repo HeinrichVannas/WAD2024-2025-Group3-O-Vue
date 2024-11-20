@@ -6,12 +6,13 @@ const posts = PostData;
 </script>
 
 <template>
+
   <div id="posts">
     <PostComponent :posts="posts" />
   </div>
 </template>
 
-<style scoped>
+<style scoped >
 #posts {
   display: flex;
   flex-direction: column;

@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app{
   display: flex;
   flex-direction: column;
@@ -77,7 +77,7 @@ a, p{
     margin: 2%;
   }
   #posts{
-    width: 60%;
+    width: 100%;
   }
   .login_cont{
     width: 20%;
@@ -87,14 +87,14 @@ a, p{
 
 @media(max-width: 500px){
   .login_cont{
-    width: 90%;
+    width: 100%;
   }
   .navBar{
     margin: 0;
-    width: 100%;
+    width: 90%;
   }
   #posts{
-    width: 90%;
+    width: 30%;
   }
   footer p{
     font-size: 0.7rem;

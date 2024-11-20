@@ -31,46 +31,5 @@ export default {
 </template>
 
 <style scoped>
-.post{
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  background-color: #696969;
-  margin-top: 20px;
-  border-radius: 15px;
-  padding: 10px;
-}
-
-.postHead + img{
-  margin: 1%;
-}
-
-.post p {
-  font-size: 1.5rem;
-  padding: 1%;
-}
-
-.postHead{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.postHead img{
-  max-width: 10%;
-  height: auto;
-  align-self: start;
-  border-radius: 100%;
-  margin-top: 1%;
-}
-
-.postHead ~ p{
-  font-size: 1.2rem;
-}
-
-.like{
-  cursor: pointer;
-  max-width: 10%;
-  border-radius: 100%;
-}
+@import '@/assets/styles/post.css';
 </style>
