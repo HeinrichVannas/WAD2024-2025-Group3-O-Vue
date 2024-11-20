@@ -17,19 +17,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
 #app{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
 }
-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
+
 
 a, p{
   font-family: sans-serif;
