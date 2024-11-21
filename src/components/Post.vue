@@ -9,8 +9,7 @@ export default {
         
         return require(`@/assets/${imagePath}`);
       } catch (e) {
-
-        return require('@/assets/default_profile.jpg');
+        return null;
       }
     },
   },
