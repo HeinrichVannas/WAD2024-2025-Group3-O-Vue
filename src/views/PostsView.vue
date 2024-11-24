@@ -1,16 +1,15 @@
-<script setup>
-import PostComponent from "@/components/Post.vue";
-import PostData from "@/assets/posts.json";
-
-const posts = PostData;
-</script>
-
 <template>
 
   <div id="posts">
     <PostComponent :posts="posts" />
   </div>
 </template>
+
+<script setup>
+import PostComponent from "@/components/Post.vue";
+//import PostData from "@/assets/posts.json";
+//const posts = PostData;
+</script>
 
 <style scoped >
 #posts {
