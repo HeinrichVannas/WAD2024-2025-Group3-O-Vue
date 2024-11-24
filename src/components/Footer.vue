@@ -1,4 +1,5 @@
 <template>
+  <button @click="resetLikes" class="resetButton">Reset likes</button>
   <footer class="footer">
     <div class="footer-content">
       <p>&copy; 2024 Facenook. All rights reserved.</p>
@@ -8,12 +9,15 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
+
 export default {
   name: "customFooter",
   methods: {
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
+    ...mapActions(["resetLikes"])
   },
 };
 </script>
@@ -43,5 +47,14 @@ export default {
 
 .back-to-top:hover {
   color: #fff;
+}
+
+.resetButton {
+  padding: 5px 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: #6a6a6a;
+  color: white;
+  border-radius: 5px;
 }
 </style>

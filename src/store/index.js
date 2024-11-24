@@ -74,11 +74,17 @@ export default createStore({
     addLike(state, postIndex) {
       state.posts[postIndex].likes++;
     },
+    resetLikes(state){
+      state.posts.forEach((post) => {post.likes=0})
+    }
   },
   actions: {
     addLike({ commit }, postIndex) {
-      commit('addLike', postIndex);
+      commit("addLike", postIndex);
     },
+    resetLikes({commit}){
+      commit("resetLikes");
+    }
   },
 
 });

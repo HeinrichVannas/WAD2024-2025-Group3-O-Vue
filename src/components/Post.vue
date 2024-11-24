@@ -7,10 +7,10 @@
     <img v-if="post.image" :src="resolveImagePath(post.image)" alt="posted image" />
     <p class="postMessage">{{ post.message }}</p>
     <div class="likeSection">
-      <img class="like" src="@/assets/likeIcon.png" alt="like button icon" @click="addLike(index)"
-      />
+      <img class="like" src="@/assets/likeIcon.png" alt="like button icon" @click="addLike(index)"/>
       <span class="likeCount">{{ post.likes }} {{ post.likes === 1 ? "like" : "likes" }}</span>
     </div>
+    <!--<img class="like" alt="like button icon" @click="resetLikes(index)">reset<img>-->
   </div>
 </template>
 
@@ -24,6 +24,7 @@ export default {
   },
   methods: {
     ...mapActions(["addLike"]), //Commit the like count increase to store
+    ...mapActions(["resetLikes"]),
     resolveImagePath(imagePath) {
       try {
         return require(`@/assets/${imagePath}`);
