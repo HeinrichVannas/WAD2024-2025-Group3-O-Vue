@@ -1,5 +1,4 @@
 <template>
-  <button @click="resetLikes" class="resetButton">Reset likes</button>
   <footer class="footer">
     <div class="footer-content">
       <p>&copy; 2024 Facenook. All rights reserved.</p>
@@ -29,6 +28,7 @@ export default {
   color: #fff;
   text-align: center;
   padding: 3px;
+  margin-top: 10px;
 
 }
 .footer-content a:hover {
@@ -47,14 +47,5 @@ export default {
 
 .back-to-top:hover {
   color: #fff;
-}
-
-.resetButton {
-  padding: 5px 10px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  background-color: #6a6a6a;
-  color: white;
-  border-radius: 5px;
 }
 </style>

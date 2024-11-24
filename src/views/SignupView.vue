@@ -105,6 +105,7 @@ input {
   font-size: 1.1rem;
   border: 1px solid #ccc;
   flex: 2;
+  width: 70%;
 }
 
 button {
@@ -127,5 +128,14 @@ p {
   font-family: sans-serif;
   font-size: 1rem;
   text-align: center;
+}
+
+@media (max-width: 800px){
+  .login_cont{
+    width: 60%;
+  }
+  .form-row{
+    flex-direction: column;
+  }
 }
 </style>

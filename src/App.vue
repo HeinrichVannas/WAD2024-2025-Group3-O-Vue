@@ -66,11 +66,12 @@ a, p{
   margin: 1%;
 }
 
-@media(min-width: 500px){
+@media(max-width: 500px){
   .navBar{
     width: 90%;
     margin: 2%;
   }
+
   #posts{
     width: 100%;
   }
@@ -80,7 +81,7 @@ a, p{
 
 }
 
-@media(max-width: 500px){
+@media(min-width: 500px){
   .login_cont{
     width: 100%;
   }
@@ -89,7 +90,7 @@ a, p{
     width: 90%;
   }
   #posts{
-    width: 30%;
+    width: 90%;
   }
   footer p{
     font-size: 0.7rem;
